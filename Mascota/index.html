@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Mascotas</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4" id="barraNav">
+        <a href="index.html" id="Mascotalandia">
+            <img src="img/petshow.avif" alt="Mascotalandia" width="50px">Mascotalandia
+        </a>
+        <!-- botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index4.html">Contacto</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="¿Qué producto buscas?" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="xdBuscar">Buscar</button>
+            </form>
+            <div>
+                <a href="login.html" id="Mascotalandia">
+                    <img src="img/user-vector-icon.png" alt="Mascotalandia" width="20px">Iniciar sesión
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="c-wrapper">
+            <div id="carousel1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel1" data-slide-to="1"></li>
+                    <li data-target="#carousel1" data-slide-to="2"></li>
+                </ol>
+                <!-- diapositivas -->
+                <div class="carousel-inner" style="border-radius: 7px;">
+                    <div class="carousel-item active">
+                        <img class="img-fluid" src="img/2.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="img-fluid" src="img/3.jpg" alt="">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid"
+                            src="img/mascotasminvu.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+                <!-- botones de desplazamiento a izquierda y derecha -->
+                <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row jumbotron" id="qSomos">
+            <div class="col-lg-6">
+                <div>
+                    <h1>Mascotalandia</h1><br>
+                    <h2 class="lead"><strong>Quiénes somos</strong></h2>
+                    <p>
+                        Somos una empresa chilena que ama los animales, somos fanáticos de los peluditos, 
+                        por lo que nos dedicamos a la distribución y comercialización de alimentos y accesorios para ellos, 
+                        con el fin de hacerlos felices. <br><br>
+
+                        Velamos por el buen servicio y atención de nuestra gente, 
+                        con el fin de entregar a ti y a tu peludito/a lo que necesitan. 
+                        Si no encuentras lo que buscas avísanos, ya que buscaremos la opción de llevarlo hasta tu hogar a como de lugar. <br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/mascota.jpg" alt="Quiénes Somos" class="img-fluid" id="imgmascota">
+            </div>
+        </div>
+        <hr><br>
+        <div>
+            <h3 class="lead" style="color: #596272"><strong>Tiendas Destacadas</strong></h3><br>
+            <div class="row">
+
+                <div class="col-md">
+                    <div class="card text-center">
+                        <img class="card-img-top mx-auto" src="img/superzoo.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">SuperZoo</h4>
+                            <p class="card-text">Última autualizacion: 30/03/23 <br><i class="fa fa-eye"></i> 9.354 - <i
+                                    class="fa fa-heart"></i> 6.845</p>
+                            <a href="https://www.superzoo.cl/" target="_blank" class="btn btn-primary col-12">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card text-center">
+                        <img class="card-img-top mx-auto" src="img/mochileros.jpg" id="mochileros">
+                        <div class="card-body">
+                            <h4 class="card-title">Mochileros Pets</h4>
+                            <p class="card-text">Última autualizacion: 19/03/23 <br><i class="fa fa-eye"></i> 6.117 - <i
+                                    class="fa fa-heart"></i> 3.545</p>
+                            <a href="https://www.mochilerospets.cl/" target="_blank" class="btn btn-primary col-12">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr><br>
+        <div class="row jumbotron" id="qSomos">
+            <div class="col-lg-5">
+            </div>
+            <div class="col-lg-1"></div>
+            <form action="index.html" method="post" name="datos" class="col-lg-6 newsletter"
+                onsubmit="return validacion()" id="newsletter">
+                <div class=" mb-4">
+                    <h2 class="h2 mb-2 font-weight-normal"><strong>Mascotalandia</strong></h2>
+                    <p>Suscríbete a nuestro pagina Mascotalandia y no pares de recibir todas las novedades en tu correo.</p>
+                    <div class="form-label-group">
+                        <input type="text" name="nombre" id="nom" placeholder="Nombre" class="form-control">
+                        <label for="nom"></label>
+                    </div>
+
+                    <div class="form-label-group">
+                        <input type="text" name="email" id="ema" placeholder="Email" class="form-control">
+                        <label for="ema"></label>
+                    </div>
+
+                    <div class="">
+                        <input id="btnNewsletter" class="btn btn-lg btn-primary btn-block" type="submit"
+                            value="¡Quiero suscribirme!">
+                    </div>
+                </div>
+            </form>
+            <div class="contenedor">
+                <br>
+                <h3>suscribete con una donacion para la fundacion de perritos que buscan un hogar,se te otorgará un 5% de descuento en
+                    el total de la venta a todos los clientes que estén suscritos.</h3>>
+            </div>
+        </div>
+
+    </main>><br>
+    <footer>
+    <div class="row col-12">
+        <div class="col-lg-2">
+            <img src="img/petshow.avif" alt="logoBookStop" width="60px">
+        </div>
+        <div class="col-lg-1">
+            <a href="index.html" id="linkFooter"><strong>INICIO</strong></a>
+        </div>
+        <div class="col-lg-1">
+            <a href="index2.html" target="_blank" id="linkFooter"><strong>INFORMACION</strong></a>
+        </div>
+        <div class="col-lg-1">
+            <a href="index3.html" target="_blank" id="linkFooter"><strong>PRODUCTOS</strong></a>
+        </div>
+        <div class="col-lg-1">
+            <a href="index4.html" target="_blank" id="linkFooter"><strong>CONTACTANOS</strong></a>
+        </div>
+
+        <div class="col-lg-1">
+            <strong>Síguenos</strong>
+            <br><br>
+            <div class="row">
+                <img src="img/2000px-Facebook_font_awesome.svg.png" alt="" width="30px" height="30px" style=" margin-left: 15px;">
+                <img src="img/twitter.png" alt="" width="30px" height="30px" style=" margin-left: 10px;">
+                <img src="img/Instagram.png" alt="" width="30px" height="30px" style=" margin-left: 10px;">
+
+            </div>
+        </div>
+
+
+        <div class="col-lg-3">
+
+            <strong>Contacto</strong>
+            <br><br>
+            <div class="row">
+                <img src="img/location.png" alt="" width="20px" height="20px" style="margin-right: 10px; margin-left: 15px;">
+                <p>Av. Esq. Blanca 501, Maipú</p>
+            </div>
+            <div class="row">
+                <img src="img/fono.png" alt="" width="20px" height="20px" style="margin-right: 10px; margin-left: 15px;">
+                <p>225554000</p>
+            </div>
+            <div class="row">
+                <img src="img/email.png" alt="" width="20px" height="20px" style="margin-right: 10px; margin-left: 15px;">
+                <p>Mascotalandia@petshow.cl</p>
+            </div>
+            <br><br>
+
+            <p>© Mascotalandia - 2023</p>
+        </div>
+    </div>
+</footer>
+    <!-- script que permite mostrar/ocultar navbar haciendo scroll -->
+    <script type="text/javascript">
+        let ubicacionInicial = window.pageYOffset;
+        window.onscroll = function () {
+            let ubicacionPosterior = window.pageYOffset;
+            if (ubicacionInicial >= ubicacionPosterior) {
+                document.getElementById("barraNav").style.top = "0";
+            }
+            else {
+                document.getElementById("barraNav").style.top = "-70px";
+            }
+            ubicacionInicial = ubicacionPosterior
+        }
+    </script>
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="js/validacion.js"></script> 
+  </body>
+</html>

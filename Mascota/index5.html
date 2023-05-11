@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/estilos3.css" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br>
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4" id="barraNav">
+        <a href="index.html" id="Mascotalandia">
+            <img src="img/petshow.avif" alt="Mascotalandia" width="50px">Mascotalandia
+        </a>
+        <!-- botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index4.html">Contacto</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="¿Qué producto buscas?" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="xdBuscar">Buscar</button>
+            </form>
+            <div>
+                <a href="login.html" id="Mascotalandia">
+                    <img src="img/user-vector-icon.png" alt="Mascotalandia" width="20px">Iniciar sesión
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <form action="" name="calc">
+            <div id="calculadora">
+                
+                <input type="text" id="visor" name="visor" onkeypress="return onlynumber();">
+                <div id="primeira">
+                    <input type="button" value="7" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="8" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="9" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="/" class="botao borda" onclick="botao(value)">
+                </div>
+                <div id="segunda">
+                    <input type="button" value="4" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="5" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="6" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="*" class="botao borda" onclick="botao(value)">
+                </div>
+                <div id="terceira">
+                    <input type="button" value="1" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="2" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="3" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="-" class="botao borda" onclick="botao(value)">
+                </div>
+                <div id="quarta">
+                    <input type="button" value="C" class="botao borda" onclick="reset()">
+                    <input type="button" value="0" class="botao borda" onclick="botao(value)">
+                    <input type="button" value="=" class="botao borda" onclick="calcula()">
+                    <input type="button" value="+" class="botao borda" onclick="botao(value)">
+                </div>
+    
+            </div>
+        </form>
+    </div>
+    
+    <script language="JavaScript" src="js/calc.js"></script>
+</body>
+</html>
